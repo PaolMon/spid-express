@@ -23,6 +23,11 @@ interface IServiceProviderOrganization {
   displayName: string;
   name: string;
 }
+interface IServiceProviderContactPerson {
+  PIVA: string;
+  email: string;
+  phone: string;
+}
 export interface IServiceProviderConfig {
   requiredAttributes: {
     attributes: ReadonlyArray<SamlAttributeT>;
@@ -33,6 +38,7 @@ export interface IServiceProviderConfig {
   spidValidatorUrl?: string;
   IDPMetadataUrl: string;
   organization: IServiceProviderOrganization;
+  contactPerson: IServiceProviderContactPerson;
   publicCert: string;
   strictResponseValidation?: StrictResponseValidationOptions;
 }

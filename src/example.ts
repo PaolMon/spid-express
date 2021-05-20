@@ -59,6 +59,11 @@ const serviceProviderConfig: IServiceProviderConfig = {
     displayName: process.env.ORG_DISPLAY_NAME,
     name: process.env.ORG_NAME
   },
+  contactPerson: {
+    PIVA: process.env.P_IVA,
+    email: process.env.EMAIL,
+    phone: process.env.PHONE
+  },
   publicCert: fs.readFileSync(process.env.METADATA_PUBLIC_CERT, "utf-8"),
   requiredAttributes: {
     attributes: process.env.SPID_ATTRIBUTES?.split(",").map(

@@ -36,25 +36,29 @@ EXPOSE 3000
 ENV METADATA_PUBLIC_CERT="./certs/cert.pem"
 ENV METADATA_PRIVATE_CERT="./certs/key.pem"
 
-ENV ORG_ISSUER="https://spid.agid.gov.it/cd"
-ENV ORG_URL="http://localhost:3000"
+ENV ORG_ISSUER="https://spid.monteverdi.dev"
+ENV ORG_URL="https://auth.monteverdi.dev"
 ENV ORG_DISPLAY_NAME="ConCert"
 ENV ORG_NAME="con-cert.it"
 
+ENV P_IVA="09293740966"
+ENV EMAIL="info@blockchainlab.it"
+ENV PHONE="+39 0984 485890"
+
 ENV AUTH_N_CONTEXT="https://www.spid.gov.it/SpidL1"
 
-ENV SPID_ATTRIBUTES="address,email,name,familyName,fiscalNumber,mobilePhone"
+ENV SPID_ATTRIBUTES="address,email,name,familyName,fiscalNumber"
 
 ENV ENDPOINT_ACS="/acs"
 ENV ENDPOINT_ERROR="/error"
 #ENV ENDPOINT_SUCCESS="/success"
-ENV ENDPOINT_SUCCESS="http://localhost:4000"
+ENV ENDPOINT_SUCCESS="https://concert.monteverdi.dev"
 ENV ENDPOINT_LOGIN="/login"
 ENV ENDPOINT_METADATA="/metadata"
 ENV ENDPOINT_LOGOUT="/logout"
 
 #ENV SPID_VALIDATOR_URL="http://localhost:8080"
-ENV SPID_VALIDATOR_URL="https://spid-saml-check:8080"
-ENV SPID_TESTENV_URL="https://spid-testenv2:8088"
+ENV SPID_VALIDATOR_URL="https://validator.monteverdi.dev"
+ENV SPID_TESTENV_URL="https://idptest.spid.gov.it"
 
 CMD ["yarn", "dev"]

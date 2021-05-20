@@ -7,6 +7,9 @@ declare global {
       ORG_URL: string;
       ORG_DISPLAY_NAME: string;
       ORG_NAME: string;
+      P_IVA: string;
+      EMAIL: string;
+      PHONE: string;
       AUTH_N_CONTEXT: string;
       SPID_ATTRIBUTES: string;
       ENDPOINT_ACS: string;

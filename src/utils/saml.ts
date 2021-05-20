@@ -387,6 +387,32 @@ const getSpidOrganizationMetadata = (
     : {};
 };
 
+const getSpidContactPersonMetadata = (
+  serviceProviderConfig: IServiceProviderConfig
+) => {
+  return serviceProviderConfig.organization
+    ? {
+        ContactPerson: {
+          $: { 
+            "contactType":"other",
+          },
+          Extensions: {
+            $: { "xmlns:spid":"https://spid.gov.it/saml-extensions" },
+            'spid:VATNumber': "IT"+serviceProviderConfig.contactPerson.PIVA,
+            'spid:FiscalCode': serviceProviderConfig.contactPerson.PIVA,
+            'spid:Private': ''
+          },
+          EmailAddress: {
+            _: serviceProviderConfig.contactPerson.email
+          },
+          TelephoneNumber: {
+            _: serviceProviderConfig.contactPerson.phone
+          }
+        }
+      }
+    : {};
+};
+
 const getKeyInfoForMetadata = (publicCert: string, privateKey: string) => ({
   file: privateKey,
   getKey: () => Buffer.from(privateKey),
@@ -431,8 +457,10 @@ export const getMetadataTamperer = (
         // tslint:disable-next-line: no-object-mutation
         o.EntityDescriptor = {
           ...o.EntityDescriptor,
-          ...getSpidOrganizationMetadata(serviceProviderConfig)
+          ...getSpidOrganizationMetadata(serviceProviderConfig),
+          ...getSpidContactPersonMetadata(serviceProviderConfig)
         };
+        
         return o;
       }, toError)
     )

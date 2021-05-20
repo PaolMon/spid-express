@@ -1,0 +1,21 @@
+2021/05/17 14:28:47 [crit] 9#9: *37 SSL_do_handshake() failed (SSL: error:141CF06C:SSL routines:tls_parse_ctos_key_share:bad key share) while SSL handshaking, client: 107.178.232.177, server: 0.0.0.0:443
+2021/05/17 14:28:50 [crit] 9#9: *39 SSL_do_handshake() failed (SSL: error:141CF06C:SSL routines:tls_parse_ctos_key_share:bad key share) while SSL handshaking, client: 107.178.232.164, server: 0.0.0.0:443
+2021/05/17 14:29:02 [crit] 9#9: *50 SSL_do_handshake() failed (SSL: error:141CF06C:SSL routines:tls_parse_ctos_key_share:bad key share) while SSL handshaking, client: 107.178.239.209, server: 0.0.0.0:443
+2021/05/18 17:29:36 [crit] 10#10: *79 SSL_do_handshake() failed (SSL: error:141CF06C:SSL routines:tls_parse_ctos_key_share:bad key share) while SSL handshaking, client: 172.105.82.147, server: 0.0.0.0:443
+2021/05/18 17:33:56 [crit] 10#10: *122 SSL_do_handshake() failed (SSL: error:141CF06C:SSL routines:tls_parse_ctos_key_share:bad key share) while SSL handshaking, client: 165.227.76.114, server: 0.0.0.0:443
+2021/05/18 21:09:10 [notice] 11#11: signal process started
+2021/05/19 02:26:13 [crit] 13#13: *170 SSL_do_handshake() failed (SSL: error:141CF06C:SSL routines:tls_parse_ctos_key_share:bad key share) while SSL handshaking, client: 184.105.247.195, server: 0.0.0.0:443
+2021/05/19 03:09:10 [notice] 15#15: signal process started
+2021/05/19 09:09:10 [notice] 19#19: signal process started
+2021/05/19 10:15:25 [crit] 21#21: *224 SSL_do_handshake() failed (SSL: error:141CF06C:SSL routines:tls_parse_ctos_key_share:bad key share) while SSL handshaking, client: 192.241.215.53, server: 0.0.0.0:443
+2021/05/19 15:09:10 [notice] 23#23: signal process started
+2021/05/19 21:09:10 [notice] 27#27: signal process started
+2021/05/19 21:53:52 [crit] 30#30: *395 SSL_do_handshake() failed (SSL: error:141CF06C:SSL routines:tls_parse_ctos_key_share:bad key share) while SSL handshaking, client: 185.142.239.16, server: 0.0.0.0:443
+2021/05/20 03:09:10 [notice] 31#31: signal process started
+2021/05/20 09:09:10 [notice] 35#35: signal process started
+2021/05/20 11:19:32 [error] 8#8: *2 connect() failed (111: Connection refused) while connecting to upstream, client: 95.255.101.57, server: auth.monteverdi.dev, request: "GET /metadata HTTP/1.1", upstream: "http://172.23.0.2:3000/metadata", host: "auth.monteverdi.dev"
+2021/05/20 11:20:11 [error] 8#8: *2 connect() failed (111: Connection refused) while connecting to upstream, client: 95.255.101.57, server: auth.monteverdi.dev, request: "GET /metadata HTTP/1.1", upstream: "http://172.23.0.2:3000/metadata", host: "auth.monteverdi.dev"
+2021/05/20 11:20:17 [error] 8#8: *2 connect() failed (111: Connection refused) while connecting to upstream, client: 95.255.101.57, server: auth.monteverdi.dev, request: "GET /whoami HTTP/1.1", upstream: "http://172.23.0.2:3000/whoami", host: "auth.monteverdi.dev", referrer: "https://concert.monteverdi.dev/"
+2021/05/20 11:20:20 [error] 9#9: *7 connect() failed (111: Connection refused) while connecting to upstream, client: 95.255.101.57, server: auth.monteverdi.dev, request: "GET /login?entityID=xx_validator HTTP/1.1", upstream: "http://172.23.0.2:3000/login?entityID=xx_validator", host: "auth.monteverdi.dev", referrer: "https://concert.monteverdi.dev/"
+2021/05/20 11:20:21 [error] 9#9: *8 connect() failed (111: Connection refused) while connecting to upstream, client: 95.255.101.57, server: auth.monteverdi.dev, request: "GET /whoami HTTP/1.1", upstream: "http://172.23.0.2:3000/whoami", host: "auth.monteverdi.dev", referrer: "https://concert.monteverdi.dev/"
+2021/05/20 11:20:23 [error] 9#9: *7 connect() failed (111: Connection refused) while connecting to upstream, client: 95.255.101.57, server: auth.monteverdi.dev, request: "GET /whoami HTTP/1.1", upstream: "http://172.23.0.2:3000/whoami", host: "auth.monteverdi.dev", referrer: "https://concert.monteverdi.dev/"
